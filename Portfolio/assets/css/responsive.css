@@ -1,0 +1,40 @@
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --fs-5xl: 2rem;
+    --fs-4xl: 1.75rem;
+    --fs-3xl: 1.5rem;
+    --container-padding: 1rem;
+  }
+
+  .nav-links {
+    display: none; /* Menu burger à implémenter si besoin */
+  }
+
+  .skills-grid,
+  .project-tags {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding: var(--space-2xl) 0;
+  }
+
+  .timeline {
+    padding-left: var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: var(--fs-4xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--fs-lg);
+  }
+}
